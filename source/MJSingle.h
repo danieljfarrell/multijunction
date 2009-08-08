@@ -10,12 +10,12 @@
 
 
 @interface MJSingle : NSObject {
-  double Eg1;
+  double Eg;
   double concentration;
   double Jm;
   double Vm;
 }
-@property (assign) double Eg1;
+@property (assign) double Eg;
 @property (assign) double concentration;
 @property (readonly) double Vm;
 @property (readonly) double Jm;

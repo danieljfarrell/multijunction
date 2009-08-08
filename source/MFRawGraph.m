@@ -247,8 +247,8 @@ void logRect(NSRect theRect) {
 
 
 - (NSRect) growRectToNiceBounds: (NSRect) oldRect {
-	NSLog(@"Growing from:");
-	logRect (oldRect);
+	//NSLog(@"Growing from:");
+	//logRect (oldRect);
 
 	float xmin, xmax, ymin, ymax, xMagnitude, yMagnitude;
 	
@@ -277,8 +277,8 @@ void logRect(NSRect theRect) {
 		ymax = ceil(ymax/yMagnitude)*yMagnitude;;
 	}
 	
-	NSLog(@"To:");
-	logRect (NSMakeRect(xmin, ymin, xmax-xmin, ymax-ymin));
+	//NSLog(@"To:");
+	//logRect (NSMakeRect(xmin, ymin, xmax-xmin, ymax-ymin));
 
 	return NSMakeRect(xmin, ymin, xmax-xmin, ymax-ymin);
 

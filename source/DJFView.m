@@ -200,6 +200,8 @@
   t3.color      = [NSColor redColor];
   */
   trackingAreas = [[NSArray alloc] initWithObjects:t1,nil];
+  activeRect = t1;
+  [self setNeedsDisplay:YES];
 
 
 }
@@ -213,6 +215,18 @@
 - (NSPoint) convertToDataPoint:(NSPoint) viewPoint
 {
   return NSPointFromCGPoint(CGPointApplyAffineTransform(NSPointToCGPoint(viewPoint), CGAffineTransformInvert(dataToPlot)));
+}
+
+- (double) selectedDataPoint
+{
+  NSPoint pt = [activeRect rect].origin;
+  return [self convertToDataPoint:pt].x;
+}
+
+- (double) selectedViewPoint
+{
+  NSPoint pt = [activeRect rect].origin;
+  return [self convertToViewPoint:pt].x;
 }
 
 
@@ -229,32 +243,14 @@
       [super shade3WithBoundary:boundary.x andColour:ta.color];
     item++;
   }
-  
-  /*
-  DJFTrackingArea *ta1 = [trackingAreas objectAtIndex:0];
-  DJFTrackingArea *ta2 = [trackingAreas objectAtIndex:1];
-  DJFTrackingArea *ta3 = [trackingAreas objectAtIndex:2];
-  
-  NSPoint temp = [self convertToDataPoint: NSMakePoint (ta1.rect.origin.x + ta1.rect.size.width, 0)];
-  
-  
-  temp = [self convertToDataPoint: NSMakePoint (ta2.rect.origin.x + ta2.rect.size.width, 0)];
-  [super shade2WithBoundary: temp.x andColour: [NSColor colorWithDeviceRed:0.0 green:0.8 blue:0.0 alpha:0.5]];
-  
-  temp = [self convertToDataPoint: NSMakePoint (ta3.rect.origin.x + ta3.rect.size.width, 0)];
-  [super shade3WithBoundary: temp.x andColour: [NSColor colorWithDeviceRed:0.8 green:0.0 blue:0.0 alpha:0.5]];
-  */
-  
-
       
-    NSLog(@"-drawRect:");
+    //NSLog(@"-drawRect:");
     [super drawRect:rect];
 
     
       for (DJFTrackingArea *obj in trackingAreas) {
         [[obj.color colorWithAlphaComponent:[obj alphaValue]] set];
         [NSBezierPath fillRect:obj.rect];
-        //NSRectFill([obj rect]);
         [obj setNeedsDisplay:YES];
       }
       

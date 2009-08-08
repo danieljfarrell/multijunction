@@ -16,6 +16,7 @@
   double Vm;
   double Jm1, Vm1;
   double Jm2, Vm2;
+  double concentration;
 }
 @property (assign) double Eg1;
 @property (assign) double Eg2;
@@ -26,5 +27,6 @@
 @property (readonly) double Jm2;
 @property (readonly) double Vm2;
 @property (readonly) double efficiency;
+@property (assign) double concentration;
 - (void) calculateJVForJunction:(unsigned) junction;
 @end

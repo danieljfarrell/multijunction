@@ -42,6 +42,7 @@
 
 @property (retain) DJFConcentration * concentration;
 - (IBAction)updateConcentration:(id)sender;
+- (IBAction)updateJunctions:(id)sender;
 @property (assign) double Eg1;
 @property (assign) double Eg2;
 @property (assign) double Eg3;

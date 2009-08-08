@@ -33,8 +33,13 @@
 }
 
 - (IBAction)updateConcentration:(id)sender {
+  NSLog(@"selected cell %@", [radioButtons selectedCell]);
     concentration.value = [concentrationSlider doubleValue];
-    [self setEg1:Eg1];
+    if([[radioButtons cells] indexOfObject:[radioButtons selectedCell]] == 0)
+      [self setEg1:Eg1];
+    
+    if([[radioButtons cells] indexOfObject:[radioButtons selectedCell]] == 1)
+      [self setEg1:Eg1 Eg2:Eg2];
 }
 
 @synthesize Eg1;
@@ -47,7 +52,10 @@
   if (self != nil) {
       
   concentration = [[DJFConcentration alloc] init];
-  concentration.value = 1.0;
+  concentration.value = [concentrationSlider doubleValue];
+  single = [[MJSingle alloc] init];
+  tandem = [[MJTandem alloc] init];
+  triple = [[MJTriple alloc] init];
   }
   return self;
 }
@@ -57,25 +65,25 @@
   [radioButtons selectCell:0];
   [view setJunctions:0];
   [radioButtons selectCell:[[radioButtons cells] objectAtIndex:0]];
-  single = [[MJSingle alloc] init];
-  tandem = [[MJTandem alloc] init];
-  triple = [[MJTriple alloc] init];
   view.controller = self;
   NSBundle *bundle = [NSBundle mainBundle];
   NSString *rtfDocPath = [bundle pathForResource:@"currentLabel" ofType:@"rtf"];
   NSData *rtfData = [NSData dataWithContentsOfFile:rtfDocPath];
   [currentUnits setAttributedStringValue:[[NSAttributedString alloc] initWithRTF:rtfData documentAttributes:NULL]];
-
-
-  
+  [self setEg1:[view selectedDataPoint]];
+  NSLog(@"[view selectedDataPoint] = %g",[view selectedDataPoint]); 
+  NSLog(@"[view selectedViewPoint] = %g",[view selectedViewPoint]);  
+  [view setNeedsDisplay:YES];
 }
 
-- (void) junctionChanged:(NSNotification *)notification
+- (IBAction)updateJunctions:(id)sender
 {
-  if([[notification name] isEqualToString:@"0"])
-    {
-     // setEg1:(double) 
-    }
+  unsigned selectedIndex = [[radioButtons cells] indexOfObject:[radioButtons selectedCell]];
+  if (selectedIndex == 0)
+    [self setEg1:Eg1];
+  else
+    [self setEg1:Eg1 Eg2:Eg2];
+  
 }
 
 
@@ -83,17 +91,17 @@
 {
 
   Eg1 = newEg1;
-  single.Eg1 = Eg1;
   single.concentration = concentration.value;
+  single.Eg = Eg1;
   NSLog(@"-setEg1 in controller");
   NSLog(@"Eg = %g",single.efficiency);
-  NSLog(@"Concentration %g",concentration.value);
+  NSLog(@"Concentration %g",single.concentration);
   
   efficiency.isSplit = NO;
   current.isSplit = NO;
   voltage.isSplit = NO;
   power.isSplit = NO;
-  [efficiencyLabel setStringValue:[NSString stringWithFormat:@"%.0f%%",single.efficiency*100]];
+  [efficiencyLabel setStringValue:[NSString stringWithFormat:@"%.1f%%",single.efficiency*100]];
   [efficiency setFillLevel:single.efficiency];
   [powerLabel setStringValue:[NSString stringWithFormat:@"%.0f (W)", single.Jm * single.Vm]];
   [currentLabel setStringValue:[NSString stringWithFormat:@"%.0f (A)", single.Jm]];
@@ -113,6 +121,8 @@
 {
   Eg1 = newEg1;
   Eg2 = newEg2;
+  tandem.concentration = concentration.value;
+  NSLog(@"conc value = %g",concentration.value);
   tandem.Eg1 = Eg1;
   tandem.Eg2 = Eg2;
   NSLog(@"-setEg1:%g Eg2:%g in controller",Eg1, Eg2);
@@ -125,7 +135,7 @@
   //[currentLabel setHidden:YES];
   //[voltageLabel setHidden:YES];
   
-  [efficiencyLabel setStringValue:[NSString stringWithFormat:@"%.0f%%",tandem.efficiency*100]];
+  [efficiencyLabel setStringValue:[NSString stringWithFormat:@"%.1f%%",tandem.efficiency*100]];
   [powerLabel setStringValue:[NSString stringWithFormat:@"%.0f (W)", tandem.efficiency*analyticalSolarConstant]];
   [currentLabel setStringValue:[NSString stringWithFormat:@"%.0f (A)", tandem.efficiency*analyticalSolarConstant/tandem.Vm]];
   [voltageLabel setStringValue:[NSString stringWithFormat:@"%.2f (V)", tandem.Vm]];
@@ -136,8 +146,8 @@
   power.isSplit = YES;
   
   //[efficiency setFillLevel:tandem.efficiency];
-  efficiency.lowerFillLevel = (tandem.Vm1 * tandem.Jm1)/analyticalSolarConstant;
-  efficiency.upperFillLevel = (tandem.Vm2 * tandem.Jm2)/analyticalSolarConstant;
+  efficiency.lowerFillLevel = (tandem.Vm1 * tandem.Jm1)/(analyticalSolarConstant);
+  efficiency.upperFillLevel = (tandem.Vm2 * tandem.Jm2)/(analyticalSolarConstant);
   [voltage setLowerFillLevel:tandem.Vm1/6.0];
   [voltage setUpperFillLevel:tandem.Vm2/6.0];
   [current setLowerFillLevel:tandem.Jm1/(q*analyticalSolarConstantFlux)];

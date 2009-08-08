@@ -25,5 +25,7 @@
 - (DJFTrackingArea*) activeTrackingArea:(NSEvent*)theEvent;
 - (NSPoint) convertToViewPoint:(NSPoint) dataPoint;
 - (NSPoint) convertToDataPoint:(NSPoint) viewPoint;
+- (double) selectedDataPoint;
+- (double) selectedViewPoint;
 
 @end

@@ -42,7 +42,7 @@ number bewtween zero and 46200 otherwise an error is thrown.
 */
 double solidangleFromConcentrationFactor (double X)
 {
-  if ((X>0.0) && (X<=46200.0))
+  if ((X>0.0) && (X<=pi/fs))
     {
       return X*fs;
     }

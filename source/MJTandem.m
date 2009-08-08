@@ -20,6 +20,7 @@
 @synthesize Vm2;
 @synthesize Jm2;
 @dynamic efficiency;
+@synthesize concentration;
 #define STEPS 1000
 
 - (id) init
@@ -34,6 +35,7 @@
     Vm2 = 0.0;
     Jm = 0.0;
     Vm = 0.0;
+    concentration = 1.0;
   }
   return self;
 }
@@ -76,12 +78,12 @@
       V[i] = VRange[0] + i*VStep;
       if ((junction == 1))
         {
-          J[i] = q*(analyticalSimplifiedGeneralisedPlanck(Eg1*q, Ts, 0.0, fs, 2) - analyticalSimplifiedGeneralisedPlanck(Eg1*q, Tearth, q*V[i], pi, 2));
+          J[i] = q*(analyticalSimplifiedGeneralisedPlanck(Eg1*q, Ts, 0.0, solidangleFromConcentrationFactor(self.concentration), 2) - analyticalSimplifiedGeneralisedPlanck(Eg1*q, Tearth, q*V[i], pi, 2));
         }
       
       if ((junction == 2))
         {
-          J[i] = q*(analyticalSimplifiedIncompleteGeneralisedPlanck(Eg2*q, Eg1*q, Ts, 0.0, fs, 2) - 1.0*analyticalSimplifiedIncompleteGeneralisedPlanck(Eg2*q, 10*q, Tearth, q*V[i], pi, 2));
+          J[i] = q*(analyticalSimplifiedIncompleteGeneralisedPlanck(Eg2*q, Eg1*q, Ts, 0.0, solidangleFromConcentrationFactor(self.concentration), 2) - 1.0*analyticalSimplifiedIncompleteGeneralisedPlanck(Eg2*q, 10*q, Tearth, q*V[i], pi, 2));
         }
 
     }
@@ -104,13 +106,13 @@
     {
       Vm1 = V[Pindex];
       Jm1 = J[Pindex];
-      NSLog(@"Calculating J1, efficiency = %g",(Vm1 * Jm1)/analyticalSolarConstant);
+      NSLog(@"Calculating J1, efficiency = %g",(Vm1 * Jm1)/(analyticalSolarConstant*concentration));
     }
   else
     {
       Vm2 = V[Pindex];
       Jm2 = J[Pindex];
-      NSLog(@"Calculating J2, efficiency = %g",(Vm2 * Jm2)/analyticalSolarConstant);
+      NSLog(@"Calculating J2, efficiency = %g",(Vm2 * Jm2)/(analyticalSolarConstant*concentration));
     }
 
   NSLog(@"Eg1 = %g, Eg2 = %g", Eg1, Eg2);
@@ -128,7 +130,7 @@
 
 - (double) efficiency
 {
-  return ((Vm1 * Jm1)+(Vm2*Jm2))/analyticalSolarConstant;
+  return ((Vm1 * Jm1)+(Vm2*Jm2))/(analyticalSolarConstant);
 }
 
 @end
