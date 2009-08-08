@@ -31,6 +31,7 @@
 		6525CDCF1006431A00A5EEFC /* gplanck.c in Sources */ = {isa = PBXBuildFile; fileRef = 6525CDCD1006431A00A5EEFC /* gplanck.c */; };
 		653084A90FA5084D00AF4605 /* AM1.5g-irradiance-smooth.xy in Resources */ = {isa = PBXBuildFile; fileRef = 653084A80FA5084D00AF4605 /* AM1.5g-irradiance-smooth.xy */; };
 		653143D80FF93FA100BB6A8F /* spectrum.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 653143D70FF93FA100BB6A8F /* spectrum.jpg */; };
+		65480013102DC1E900DBF9B9 /* multijunction.icns in Resources */ = {isa = PBXBuildFile; fileRef = 65480012102DC1E900DBF9B9 /* multijunction.icns */; };
 		6562A71610064B910096F169 /* DJFConcentration.m in Sources */ = {isa = PBXBuildFile; fileRef = 6562A71510064B910096F169 /* DJFConcentration.m */; };
 		6574C6340FF8CBFC00C178C2 /* DJFSplitDataBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 6574C6330FF8CBFC00C178C2 /* DJFSplitDataBar.m */; };
 		657B4E330FC5F05400B9ECAF /* AM1.5-direct-flux-per-eV-interpolated.xy in Resources */ = {isa = PBXBuildFile; fileRef = 657B4E320FC5F05400B9ECAF /* AM1.5-direct-flux-per-eV-interpolated.xy */; };
@@ -80,6 +81,7 @@
 		6525CDCD1006431A00A5EEFC /* gplanck.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gplanck.c; sourceTree = "<group>"; };
 		653084A80FA5084D00AF4605 /* AM1.5g-irradiance-smooth.xy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "AM1.5g-irradiance-smooth.xy"; sourceTree = "<group>"; };
 		653143D70FF93FA100BB6A8F /* spectrum.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = spectrum.jpg; sourceTree = "<group>"; };
+		65480012102DC1E900DBF9B9 /* multijunction.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = multijunction.icns; sourceTree = "<group>"; };
 		6562A71410064B910096F169 /* DJFConcentration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DJFConcentration.h; sourceTree = "<group>"; };
 		6562A71510064B910096F169 /* DJFConcentration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DJFConcentration.m; sourceTree = "<group>"; };
 		6574C6320FF8CBFC00C178C2 /* DJFSplitDataBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DJFSplitDataBar.h; sourceTree = "<group>"; };
@@ -95,7 +97,7 @@
 		65EAA8A00FA4E79300F647EF /* DJFController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DJFController.h; sourceTree = "<group>"; };
 		65EAA8A10FA4E79300F647EF /* DJFController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DJFController.m; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8D1107320486CEB800E47090 /* Multijunction Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Multijunction Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D1107320486CEB800E47090 /* Multijunction.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Multijunction.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,7 +156,7 @@
 		19C28FACFE9D520D11CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8D1107320486CEB800E47090 /* Multijunction Calculator.app */,
+				8D1107320486CEB800E47090 /* Multijunction.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -183,6 +185,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				65480012102DC1E900DBF9B9 /* multijunction.icns */,
 				653143D70FF93FA100BB6A8F /* spectrum.jpg */,
 				365BADD20FD3D52000BDA1F5 /* currentLabel.rtf */,
 				657B4E320FC5F05400B9ECAF /* AM1.5-direct-flux-per-eV-interpolated.xy */,
@@ -240,7 +243,7 @@
 			name = MJCalc;
 			productInstallPath = "$(HOME)/Applications";
 			productName = "Drag tracking area";
-			productReference = 8D1107320486CEB800E47090 /* Multijunction Calculator.app */;
+			productReference = 8D1107320486CEB800E47090 /* Multijunction.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -273,6 +276,7 @@
 				657B4E330FC5F05400B9ECAF /* AM1.5-direct-flux-per-eV-interpolated.xy in Resources */,
 				365BADD30FD3D52000BDA1F5 /* currentLabel.rtf in Resources */,
 				653143D80FF93FA100BB6A8F /* spectrum.jpg in Resources */,
+				65480013102DC1E900DBF9B9 /* multijunction.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -377,7 +381,7 @@
 				GCC_PREFIX_HEADER = "Drag tracking area_Prefix.pch";
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
-				PRODUCT_NAME = "Drag tracking area";
+				PRODUCT_NAME = Multijunction;
 			};
 			name = Release;
 		};
@@ -401,9 +405,11 @@
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_ENABLE_OBJC_GC = required;
+				GCC_VERSION = 4.2;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				PREBINDING = NO;
+				PRODUCT_NAME = Multijunction;
 				SDKROOT = macosx10.5;
 			};
 			name = Release;
