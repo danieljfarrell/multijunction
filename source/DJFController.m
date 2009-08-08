@@ -72,10 +72,7 @@
 
 - (void) junctionChanged:(NSNotification *)notification
 {
-  if([[notification name] isEqualToString:@"0"])
-    {
-     // setEg1:(double) 
-    }
+
 }
 
 
