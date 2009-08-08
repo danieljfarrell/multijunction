@@ -1,0 +1,444 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		3685A0E410039CB100442440 /* Multijunction Simulator */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 3685A0E710039CCF00442440 /* Build configuration list for PBXAggregateTarget "Multijunction Simulator" */;
+			buildPhases = (
+			);
+			dependencies = (
+				3685A0E910039CDE00442440 /* PBXTargetDependency */,
+			);
+			name = "Multijunction Simulator";
+			productName = Untitled;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58140DA1D0A300B32029 /* MainMenu.xib */; };
+		3657EB360FD3DAB1008DEACE /* MJTandem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3657EB350FD3DAB1008DEACE /* MJTandem.m */; };
+		365BADD30FD3D52000BDA1F5 /* currentLabel.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 365BADD20FD3D52000BDA1F5 /* currentLabel.rtf */; };
+		6503CCBF0FF01E6E00820C2B /* MJTriple.m in Sources */ = {isa = PBXBuildFile; fileRef = 6503CCBE0FF01E6E00820C2B /* MJTriple.m */; };
+		6521E6840F82592D004F0BC0 /* DJFView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6521E6830F82592D004F0BC0 /* DJFView.m */; };
+		6521E6870F825950004F0BC0 /* DJFTrackingArea.m in Sources */ = {isa = PBXBuildFile; fileRef = 6521E6860F825950004F0BC0 /* DJFTrackingArea.m */; };
+		6525CDCE1006431A00A5EEFC /* pvconstants.c in Sources */ = {isa = PBXBuildFile; fileRef = 6525CDCA1006431900A5EEFC /* pvconstants.c */; };
+		6525CDCF1006431A00A5EEFC /* gplanck.c in Sources */ = {isa = PBXBuildFile; fileRef = 6525CDCD1006431A00A5EEFC /* gplanck.c */; };
+		653084A90FA5084D00AF4605 /* AM1.5g-irradiance-smooth.xy in Resources */ = {isa = PBXBuildFile; fileRef = 653084A80FA5084D00AF4605 /* AM1.5g-irradiance-smooth.xy */; };
+		653143D80FF93FA100BB6A8F /* spectrum.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 653143D70FF93FA100BB6A8F /* spectrum.jpg */; };
+		6562A71610064B910096F169 /* DJFConcentration.m in Sources */ = {isa = PBXBuildFile; fileRef = 6562A71510064B910096F169 /* DJFConcentration.m */; };
+		6574C6340FF8CBFC00C178C2 /* DJFSplitDataBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 6574C6330FF8CBFC00C178C2 /* DJFSplitDataBar.m */; };
+		657B4E330FC5F05400B9ECAF /* AM1.5-direct-flux-per-eV-interpolated.xy in Resources */ = {isa = PBXBuildFile; fileRef = 657B4E320FC5F05400B9ECAF /* AM1.5-direct-flux-per-eV-interpolated.xy */; };
+		658C5DED0FD32F2B008F94CC /* MJSingle.m in Sources */ = {isa = PBXBuildFile; fileRef = 658C5DEA0FD32F2B008F94CC /* MJSingle.m */; };
+		658C5DF30FD33040008F94CC /* DJFDataBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 658C5DF20FD33040008F94CC /* DJFDataBar.m */; };
+		659056300F93B366006FADF8 /* MFRawGraph.m in Sources */ = {isa = PBXBuildFile; fileRef = 6590562F0F93B366006FADF8 /* MFRawGraph.m */; };
+		659056460F93B437006FADF8 /* AM1.5g-irradiance.xy in Resources */ = {isa = PBXBuildFile; fileRef = 659056450F93B437006FADF8 /* AM1.5g-irradiance.xy */; };
+		65EAA8A20FA4E79300F647EF /* DJFController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65EAA8A10FA4E79300F647EF /* DJFController.m */; };
+		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
+		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
+		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3685A0E810039CDE00442440 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D1107260486CEB800E47090;
+			remoteInfo = MJCalc;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		13E42FB307B3F0F600E4EEF1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
+		1DDD58150DA1D0A300B32029 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		32CA4F630368D1EE00C91783 /* Drag tracking area_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Drag tracking area_Prefix.pch"; sourceTree = "<group>"; };
+		3657EB340FD3DAB1008DEACE /* MJTandem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJTandem.h; sourceTree = "<group>"; };
+		3657EB350FD3DAB1008DEACE /* MJTandem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJTandem.m; sourceTree = "<group>"; };
+		365BAD5E0FD3CFFD00BDA1F5 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		365BADD20FD3D52000BDA1F5 /* currentLabel.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = currentLabel.rtf; sourceTree = "<group>"; };
+		36E586AE1003912E001DF130 /* Info copy.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info copy.plist"; sourceTree = "<group>"; };
+		6503CCBD0FF01E6E00820C2B /* MJTriple.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJTriple.h; sourceTree = "<group>"; };
+		6503CCBE0FF01E6E00820C2B /* MJTriple.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJTriple.m; sourceTree = "<group>"; };
+		6521E6820F82592D004F0BC0 /* DJFView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DJFView.h; sourceTree = "<group>"; };
+		6521E6830F82592D004F0BC0 /* DJFView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DJFView.m; sourceTree = "<group>"; };
+		6521E6850F825950004F0BC0 /* DJFTrackingArea.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DJFTrackingArea.h; sourceTree = "<group>"; };
+		6521E6860F825950004F0BC0 /* DJFTrackingArea.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DJFTrackingArea.m; sourceTree = "<group>"; };
+		6525CDCA1006431900A5EEFC /* pvconstants.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pvconstants.c; sourceTree = "<group>"; };
+		6525CDCB1006431A00A5EEFC /* pvconstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pvconstants.h; sourceTree = "<group>"; };
+		6525CDCC1006431A00A5EEFC /* gplanck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gplanck.h; sourceTree = "<group>"; };
+		6525CDCD1006431A00A5EEFC /* gplanck.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gplanck.c; sourceTree = "<group>"; };
+		653084A80FA5084D00AF4605 /* AM1.5g-irradiance-smooth.xy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "AM1.5g-irradiance-smooth.xy"; sourceTree = "<group>"; };
+		653143D70FF93FA100BB6A8F /* spectrum.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = spectrum.jpg; sourceTree = "<group>"; };
+		6562A71410064B910096F169 /* DJFConcentration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DJFConcentration.h; sourceTree = "<group>"; };
+		6562A71510064B910096F169 /* DJFConcentration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DJFConcentration.m; sourceTree = "<group>"; };
+		6574C6320FF8CBFC00C178C2 /* DJFSplitDataBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DJFSplitDataBar.h; sourceTree = "<group>"; };
+		6574C6330FF8CBFC00C178C2 /* DJFSplitDataBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DJFSplitDataBar.m; sourceTree = "<group>"; };
+		657B4E320FC5F05400B9ECAF /* AM1.5-direct-flux-per-eV-interpolated.xy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "AM1.5-direct-flux-per-eV-interpolated.xy"; sourceTree = "<group>"; };
+		658C5DE90FD32F2B008F94CC /* MJSingle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJSingle.h; sourceTree = "<group>"; };
+		658C5DEA0FD32F2B008F94CC /* MJSingle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJSingle.m; sourceTree = "<group>"; };
+		658C5DF10FD33040008F94CC /* DJFDataBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DJFDataBar.h; sourceTree = "<group>"; };
+		658C5DF20FD33040008F94CC /* DJFDataBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DJFDataBar.m; sourceTree = "<group>"; };
+		6590562E0F93B366006FADF8 /* MFRawGraph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFRawGraph.h; sourceTree = "<group>"; };
+		6590562F0F93B366006FADF8 /* MFRawGraph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFRawGraph.m; sourceTree = "<group>"; };
+		659056450F93B437006FADF8 /* AM1.5g-irradiance.xy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "AM1.5g-irradiance.xy"; sourceTree = "<group>"; };
+		65EAA8A00FA4E79300F647EF /* DJFController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DJFController.h; sourceTree = "<group>"; };
+		65EAA8A10FA4E79300F647EF /* DJFController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DJFController.m; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D1107320486CEB800E47090 /* Multijunction Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Multijunction Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D11072E0486CEB800E47090 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				658C5DE40FD32F2B008F94CC /* Cells */,
+				65EAA8A00FA4E79300F647EF /* DJFController.h */,
+				65EAA8A10FA4E79300F647EF /* DJFController.m */,
+				6562A71410064B910096F169 /* DJFConcentration.h */,
+				6562A71510064B910096F169 /* DJFConcentration.m */,
+				6590562E0F93B366006FADF8 /* MFRawGraph.h */,
+				6590562F0F93B366006FADF8 /* MFRawGraph.m */,
+				6521E6820F82592D004F0BC0 /* DJFView.h */,
+				6521E6830F82592D004F0BC0 /* DJFView.m */,
+				6521E6850F825950004F0BC0 /* DJFTrackingArea.h */,
+				6521E6860F825950004F0BC0 /* DJFTrackingArea.m */,
+				658C5DF10FD33040008F94CC /* DJFDataBar.h */,
+				658C5DF20FD33040008F94CC /* DJFDataBar.m */,
+				6574C6320FF8CBFC00C178C2 /* DJFSplitDataBar.h */,
+				6574C6330FF8CBFC00C178C2 /* DJFSplitDataBar.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				365BAD5E0FD3CFFD00BDA1F5 /* QuartzCore.framework */,
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
+				13E42FB307B3F0F600E4EEF1 /* CoreData.framework */,
+				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107320486CEB800E47090 /* Multijunction Calculator.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* Drag tracking area */ = {
+			isa = PBXGroup;
+			children = (
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = "Drag tracking area";
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* Drag tracking area_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				653143D70FF93FA100BB6A8F /* spectrum.jpg */,
+				365BADD20FD3D52000BDA1F5 /* currentLabel.rtf */,
+				657B4E320FC5F05400B9ECAF /* AM1.5-direct-flux-per-eV-interpolated.xy */,
+				653084A80FA5084D00AF4605 /* AM1.5g-irradiance-smooth.xy */,
+				659056450F93B437006FADF8 /* AM1.5g-irradiance.xy */,
+				8D1107310486CEB800E47090 /* Info.plist */,
+				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
+				1DDD58140DA1D0A300B32029 /* MainMenu.xib */,
+				36E586AE1003912E001DF130 /* Info copy.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
+				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		658C5DE40FD32F2B008F94CC /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				6525CDCA1006431900A5EEFC /* pvconstants.c */,
+				6525CDCB1006431A00A5EEFC /* pvconstants.h */,
+				6525CDCC1006431A00A5EEFC /* gplanck.h */,
+				6525CDCD1006431A00A5EEFC /* gplanck.c */,
+				658C5DE90FD32F2B008F94CC /* MJSingle.h */,
+				658C5DEA0FD32F2B008F94CC /* MJSingle.m */,
+				3657EB340FD3DAB1008DEACE /* MJTandem.h */,
+				3657EB350FD3DAB1008DEACE /* MJTandem.m */,
+				6503CCBD0FF01E6E00820C2B /* MJTriple.h */,
+				6503CCBE0FF01E6E00820C2B /* MJTriple.m */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D1107260486CEB800E47090 /* MJCalc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "MJCalc" */;
+			buildPhases = (
+				8D1107290486CEB800E47090 /* Resources */,
+				8D11072C0486CEB800E47090 /* Sources */,
+				8D11072E0486CEB800E47090 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MJCalc;
+			productInstallPath = "$(HOME)/Applications";
+			productName = "Drag tracking area";
+			productReference = 8D1107320486CEB800E47090 /* Multijunction Calculator.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Drag tracking area" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			mainGroup = 29B97314FDCFA39411CA2CEA /* Drag tracking area */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3685A0E410039CB100442440 /* Multijunction Simulator */,
+				8D1107260486CEB800E47090 /* MJCalc */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D1107290486CEB800E47090 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
+				1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */,
+				659056460F93B437006FADF8 /* AM1.5g-irradiance.xy in Resources */,
+				653084A90FA5084D00AF4605 /* AM1.5g-irradiance-smooth.xy in Resources */,
+				657B4E330FC5F05400B9ECAF /* AM1.5-direct-flux-per-eV-interpolated.xy in Resources */,
+				365BADD30FD3D52000BDA1F5 /* currentLabel.rtf in Resources */,
+				653143D80FF93FA100BB6A8F /* spectrum.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D11072C0486CEB800E47090 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072D0486CEB800E47090 /* main.m in Sources */,
+				6521E6840F82592D004F0BC0 /* DJFView.m in Sources */,
+				6521E6870F825950004F0BC0 /* DJFTrackingArea.m in Sources */,
+				659056300F93B366006FADF8 /* MFRawGraph.m in Sources */,
+				65EAA8A20FA4E79300F647EF /* DJFController.m in Sources */,
+				658C5DED0FD32F2B008F94CC /* MJSingle.m in Sources */,
+				658C5DF30FD33040008F94CC /* DJFDataBar.m in Sources */,
+				3657EB360FD3DAB1008DEACE /* MJTandem.m in Sources */,
+				6503CCBF0FF01E6E00820C2B /* MJTriple.m in Sources */,
+				6574C6340FF8CBFC00C178C2 /* DJFSplitDataBar.m in Sources */,
+				6525CDCE1006431A00A5EEFC /* pvconstants.c in Sources */,
+				6525CDCF1006431A00A5EEFC /* gplanck.c in Sources */,
+				6562A71610064B910096F169 /* DJFConcentration.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3685A0E910039CDE00442440 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8D1107260486CEB800E47090 /* MJCalc */;
+			targetProxy = 3685A0E810039CDE00442440 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		089C165CFE840E0CC02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C165DFE840E0CC02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1DDD58140DA1D0A300B32029 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1DDD58150DA1D0A300B32029 /* English */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3685A0E510039CB100442440 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PRODUCT_NAME = Untitled;
+			};
+			name = Debug;
+		};
+		3685A0E610039CB100442440 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				PRODUCT_NAME = Untitled;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		C01FCF4B08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Drag tracking area_Prefix.pch";
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = "Multijunction Calculator";
+			};
+			name = Debug;
+		};
+		C01FCF4C08A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Drag tracking area_Prefix.pch";
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = "Drag tracking area";
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.5;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_ENABLE_OBJC_GC = required;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.5;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3685A0E710039CCF00442440 /* Build configuration list for PBXAggregateTarget "Multijunction Simulator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3685A0E510039CB100442440 /* Debug */,
+				3685A0E610039CB100442440 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "MJCalc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4B08A954540054247B /* Debug */,
+				C01FCF4C08A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Drag tracking area" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
